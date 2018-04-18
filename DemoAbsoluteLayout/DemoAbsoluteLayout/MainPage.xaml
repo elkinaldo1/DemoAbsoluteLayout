@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DemoAbsoluteLayout"
+             x:Class="DemoAbsoluteLayout.MainPage">
+
+    <!--<AbsoluteLayout>
+        <Button Text="Caja 1" 
+                BackgroundColor="Red" 
+                AbsoluteLayout.LayoutBounds="50,50,200,300">
+        </Button>
+        <Button Text="Caja 2"
+                BackgroundColor="Violet"
+                AbsoluteLayout.LayoutBounds="40,40,200,100">
+        </Button>
+        <Button Text="Porcentaje"
+                BackgroundColor="Blue"
+                AbsoluteLayout.LayoutBounds=".5,.5,.3,.3"
+                AbsoluteLayout.LayoutFlags="All">
+        </Button>
+        <Button Text="Ancho Proporcional"
+                BackgroundColor="Brown"
+                AbsoluteLayout.LayoutBounds="150,500,.4,80"
+                AbsoluteLayout.LayoutFlags="WidthProportional">
+        </Button>
+        <Button Text="Alto Proporcional"
+                BackgroundColor="Gray"
+                AbsoluteLayout.LayoutBounds="200,20,150,.5"
+                AbsoluteLayout.LayoutFlags="HeightProportional">
+        </Button>
+    </AbsoluteLayout>-->
+
+    <ScrollView>
+    <StackLayout Margin="10,20,10,20">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Nombre"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry Placeholder="Ingrese su Nombre"
+                   HorizontalOptions="FillAndExpand"></Entry>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Dirección"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold">
+            </Label>
+            <Entry Placeholder="Ingrese su Dirección"
+                   HorizontalOptions="FillAndExpand"></Entry>
+        </StackLayout>
+        
+        <StackLayout>
+            <BoxView BackgroundColor="Orange"
+                     VerticalOptions="FillAndExpand"
+                     HeightRequest="400"
+                     HorizontalOptions="FillAndExpand">                
+            </BoxView>
+            <Button Text="Boton Foto"></Button>
+        </StackLayout>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
